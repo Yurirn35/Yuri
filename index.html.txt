@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Relógio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="clock"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Relógio</title>
+  <style>
+    #clock {
+      font-size: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Relógio</h1>
+  <div id="clock"></div>
+
+  <script>
+    function updateTime() {
+      var date = new Date();
+      var time = date.toLocaleTimeString();
+      document.getElementById("clock").innerHTML = time;01:20
+    }
+    setInterval(updateTime, 1000);
+  </script>
+</body>
+</html>
